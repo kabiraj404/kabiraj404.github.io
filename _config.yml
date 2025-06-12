@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Kabiraj
+name: Kabiraj Khatiwada
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: walking towards science and nature 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://kabiraj404.github.io/images/new_dp.jpg
@@ -21,12 +21,13 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: kabiraj404
   instagram:
   linkedin:
   pinterest:
+  bluesky: kabiraj404.bsky.social 
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: #jekyllrb
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -54,6 +55,7 @@ baseurl: ""
 #
 
 permalink: /:title/
+permalink: /:categories/:title/
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
@@ -84,3 +86,86 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+
+
+#cheanges from here 
+
+####modified from here 
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+
+# Collections
+collections:
+  tech2:
+    output: true
+    permalink: /:collection/:path/
+  tech1:
+    output: true
+    permalink: /:collection/:path/
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+###modified upto here
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+emptyArray: []
+
+#Finally you will need to add this end of your _config.yml so sorting and posting work: 
+# taken from https://github.com/damieng/jekyll-blog-comments 
+comments:
+  receiver: https://{{your-receiver-site}}/api/PostComment}}
+
+
+commenting: open
+#not sure whether it is or not
+defaults:
+  -
+    scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+      author: kabiraj
+      commenting: open
+  -
+    scope:
+      path: '_posts'
+      type: posts
+    values:
+      layout: post
+      author: kabiraj
+      commenting: open
