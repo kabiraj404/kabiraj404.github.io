@@ -63,7 +63,7 @@ Dedidated to her
 
 ![_config.yml]({{ site.baseurl }}/images/she2.jpg)
 (This beautiful bird was trying to lay eggs in a small bush in front of my apartment)
-
+<i> Note: I wrote it for an online poetry forum, but later I got lazy </i>
 
 
 
