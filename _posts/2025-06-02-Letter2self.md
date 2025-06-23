@@ -21,7 +21,7 @@ By  next year at this time, I will have <br>
 <li>submitted one manuscript</li> 
 <li>read 10 books, watched 20 movies, written 15 blog posts</li> <li>tried 12 new restaurants, taken 50 photos</li> 
 </ul>
-<ul>
+
 
 I will rank myself after a year -- almost at the same time. Let's see I do
 
