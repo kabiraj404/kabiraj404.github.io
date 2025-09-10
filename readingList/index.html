@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: system-ui, sans-serif;
-      max-width: 800px;
+      max-width: 600px;
       margin: 2rem auto;
       padding: 1rem;
       background: #f9f9f9;
@@ -87,6 +87,34 @@
             `;
             container.appendChild(card);
           });
+
+          fetch('list.json?t=' + new Date().getTime()) // cache-bust
+            .then(res => res.json())
+            .then(data => {
+              const container = document.getElementById('reading-list');
+              container.innerHTML = '';
+              if (data.length === 0) {
+                container.innerHTML = '<p>No articles found.</p>';
+                return;
+              }
+              const currentDate = new Date().toLocaleDateString();
+              data.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                  ${item.image ? `<img src="${item.image}" alt="Preview image for ${item.title}">` : ''}
+                  <h2>
+                    <a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a>
+                    <small style="font-weight:normal; font-size:0.8rem; color:#666; margin-left:0.5rem;">
+                      (${currentDate})
+                    </small>
+                  </h2>
+                  ${item.description ? `<p>${item.description}</p>` : ''}
+                `;
+                container.appendChild(card);
+              });
+            });
+
 
           // Success, break loop
           return;
