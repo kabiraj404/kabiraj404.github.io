@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -34,6 +34,110 @@
       .catch(err => {
         document.getElementById('reading-list').textContent = 'Failed to load reading list.';
         console.error(err);
+      });
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Reading List</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    .card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0.5rem 0 0;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 My Reading List</h1>
+  <div id="reading-list">Loading...</div>
+
+  <div class="footer">
+    Powered by GitHub Pages — Updated manually from <code>list.json</code>
+  </div>
+
+  <script>
+    fetch('list.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('reading-list');
+        container.innerHTML = '';
+
+        if (data.length === 0) {
+          container.innerHTML = '<p>No articles found.</p>';
+          return;
+        }
+
+        data.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          card.innerHTML = `
+            ${item.image ? `<img src="${item.image}" alt="Preview image for ${item.title}">` : ''}
+            <h2><a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a></h2>
+            ${item.description ? `<p>${item.description}</p>` : ''}
+          `;
+
+          container.appendChild(card);
+        });
+      })
+      .catch(error => {
+        document.getElementById('reading-list').innerHTML = '<p>Failed to load reading list.</p>';
+        console.error('Error loading list.json:', error);
       });
   </script>
 </body>

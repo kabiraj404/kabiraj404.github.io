@@ -2,13 +2,13 @@
   {
     "title": "Example Article",
     "url": "https://example.com",
-    "description": "This is a cool article.",
-    "image": "https://via.placeholder.com/150"
+    "description": "This is a cool article about something interesting.",
+    "image": "https://via.placeholder.com/400x200"
   },
   {
     "title": "ChatGPT Release Notes",
     "url": "https://openai.com/blog/chatgpt-release-notes",
-    "description": "Latest updates from OpenAI",
+    "description": "Latest updates and features released by OpenAI for ChatGPT.",
     "image": "https://openai.com/content/images/2023/11/chatgpt-image.png"
   }
 ]
