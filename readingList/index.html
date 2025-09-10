@@ -109,6 +109,7 @@
                       (${currentDate})
                     </small>
                   </h2>
+                  ${item.tag ? `<p>${item.tag}</p>` : ''}
                   ${item.description ? `<p>${item.description}</p>` : ''}
                 `;
                 container.appendChild(card);
