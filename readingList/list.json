@@ -1,6 +1,15 @@
 [
   {
-    "title": "Blog • Ditching Obsidian and building my own",
+    "title": "Want to Progress? Don’t Fall Into the Trap of 'Lifestyle Training'",
+    "url": "https://stories.strava.com/pb/articles/want-to-progress-dont-fall-into-the-trap-of-lifestyle-training",
+    "description": "You hear run coaches say it again and again: if you train the same way day after day, you’re unlikely to see much progression. If you are targeting a faster run time, it’s important to structure your training properly, as Matt Fitzgerald explains.",
+    "site": "stories.strava.com",
+    "author": "",
+    "image": "https://images.ctfassets.net/7ajcefednbt4/5qdzRzNqs6t2CKcASitFU7/152709bda6889503147d63cf415a25a4/Couple_running.jpg?w=1200&fm=jpg",
+    "tag": "ytrtyt"
+  },
+  {
+    "title": "Blog â¢ Ditching Obsidian and building my own",
     "url": "https://amberwilliams.io/blogs/building-my-own-pkms",
     "description": "Tired of migrating notes apps like Obsidian or Evernote? Learn how to build your own private, long-term PKM using self-hosted Directus for control & longevity.",
     "site": "Amber Williams' Blog",
