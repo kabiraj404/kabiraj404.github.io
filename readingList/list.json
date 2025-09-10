@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Example Article",
+    "url": "https://example.com",
+    "description": "This is a cool article.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "title": "ChatGPT Release Notes",
+    "url": "https://openai.com/blog/chatgpt-release-notes",
+    "description": "Latest updates from OpenAI",
+    "image": "https://openai.com/content/images/2023/11/chatgpt-image.png"
+  }
+]

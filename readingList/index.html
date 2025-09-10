@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Reading List</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 1rem; }
+    .card { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; border-radius: 5px; }
+    img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <h1>📚 My Reading List</h1>
+  <div id="reading-list">Loading...</div>
+
+  <script>
+    fetch('list.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('reading-list');
+        container.innerHTML = '';
+        data.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <h2><a href="${item.url}" target="_blank">${item.title}</a></h2>
+            ${item.image ? `<img src="${item.image}" alt="${item.title}">` : ''}
+            <p>${item.description || ''}</p>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(err => {
+        document.getElementById('reading-list').textContent = 'Failed to load reading list.';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
