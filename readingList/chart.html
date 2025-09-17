@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reading List Activity</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<canvas id="readsChart" width="600" height="400"></canvas>
+
+<script>
+fetch('https://raw.githubusercontent.com/kabiraj404/kabiraj404.github.io/kabiraj404.github.io/readingList/list.json')
+  .then(res => res.json())
+  .then(data => {
+    // Collect dates and count per month
+    const counts = {};
+    data.forEach(item => {
+      let month = item.date.slice(0,7); // YYYY-MM
+      counts[month] = (counts[month] || 0) + 1;
+    });
+    const labels = Object.keys(counts);
+    const values = Object.values(counts);
+
+    new Chart(document.getElementById('readsChart'), {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Reads per Month',
+          data: values
+        }]
+      }
+    });
+  });
+</script>
+</body>
+</html>
