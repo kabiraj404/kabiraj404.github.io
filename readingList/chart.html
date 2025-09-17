@@ -5,32 +5,70 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+
 <canvas id="readsChart" width="600" height="400"></canvas>
 
 <script>
-fetch('https://raw.githubusercontent.com/kabiraj404/kabiraj404.github.io/kabiraj404.github.io/readingList/list.json')
-  .then(res => res.json())
-  .then(data => {
-    // Collect dates and count per month
-    const counts = {};
-    data.forEach(item => {
-      let month = item.date.slice(0,7); // YYYY-MM
-      counts[month] = (counts[month] || 0) + 1;
-    });
-    const labels = Object.keys(counts);
-    const values = Object.values(counts);
+  // Fetch the JSON data of reading list
+  fetch('https://raw.githubusercontent.com/kabiraj404/kabiraj404.github.io/kabiraj404.github.io/readingList/list.json')
+    .then(res => {
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.json();
+    })
+    .then(data => {
+      // Prepare counts of reads grouped by month (YYYY-MM)
+      const counts = {};
+      data.forEach(item => {
+        if (item.date && item.date.length >= 7) {
+          let month = item.date.slice(0, 7); // Extract YYYY-MM
+          counts[month] = (counts[month] || 0) + 1;
+        }
+      });
 
-    new Chart(document.getElementById('readsChart'), {
-      type: 'bar',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: 'Reads per Month',
-          data: values
-        }]
-      }
+      const labels = Object.keys(counts);
+      const values = Object.values(counts);
+
+      // Log labels and values for debugging
+      console.log("Months:", labels);
+      console.log("Counts:", values);
+
+      // Create the bar chart
+      new Chart(document.getElementById('readsChart'), {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Reads per Month',
+            data: values,
+            backgroundColor: 'rgba(54, 162, 235, 0.7)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          },
+          responsive: true,
+          plugins: {
+            legend: {
+              display: true,
+              position: 'top'
+            },
+            title: {
+              display: true,
+              text: 'Monthly Reading Activity'
+            }
+          }
+        }
+      });
+    })
+    .catch(error => {
+      console.error('Error loading or parsing data:', error);
     });
-  });
 </script>
+
 </body>
 </html>
