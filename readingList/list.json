@@ -1,5 +1,15 @@
 [
   {
+    "title": "How I Reversed Amazon's Kindle Web Obfuscation Because Their App Sucked",
+    "url": "https://blog.pixelmelt.dev/kindle-web-drm/",
+    "description": "As it turns out they don't actually want you to do this (and have some interesting ways to stop you)",
+    "site": "Cats with power tools",
+    "author": "",
+    "image": "https://images.unsplash.com/photo-1656115914684-2845b7a13476?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGNhdCUyMGtpbmRsZXxlbnwwfHx8fDE3NjAzMTQ5NDd8MA&ixlib=rb-4.1.0&q=80&w=2000",
+    "tag": "** To prove a point? Absolutely. ",
+    "date": "2025-10-17"
+  },
+  {
     "title": "Climate Monitoring Resources – Diagram Monkey",
     "url": "https://diagrammonkey.wordpress.com/monitoring-resources/",
     "description": "I’ve gathered together a list of regularly updated resources for climate monitoring. This is the kind of information you can use to get a reasonably up-to-date view of what’s happening …",
