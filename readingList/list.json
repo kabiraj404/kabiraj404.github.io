@@ -1,5 +1,15 @@
 [
   {
+    "title": "Code rant: The Configuration Complexity Clock",
+    "url": "https://mikehadlow.blogspot.com/2012/05/configuration-complexity-clock.html?m=1",
+    "description": "When I was a young coder, just starting out in the big scary world of enterprise software, an older, far more experienced chap gave me a ste...",
+    "site": "mikehadlow.blogspot.com",
+    "author": "",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_s1ytB4dVQjhyXfUOe-381ycBjdoauKD5w7c4rFnajVPYumENd6M9A6a0ySa3LP2XI-gWOzqjlkeN82PqWZpxxcLMG0c6IaAugivnUbOjh_IaEDPMEd5BAL1GdNoRakXxEsz9zg/w1200-h630-p-k-no-nu/?imgmax=800",
+    "tag": "*** i find it really interesting when people find interesting ways to explain complex mechanism in simple language",
+    "date": "2025-10-18"
+  },
+  {
     "title": "How I Reversed Amazon's Kindle Web Obfuscation Because Their App Sucked",
     "url": "https://blog.pixelmelt.dev/kindle-web-drm/",
     "description": "As it turns out they don't actually want you to do this (and have some interesting ways to stop you)",
