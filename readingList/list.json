@@ -1,5 +1,15 @@
 [
   {
+    "title": "HTML’s Best Kept Secret: The <output> Tag",
+    "url": "https://denodell.com/blog/html-best-kept-secret-output-tag",
+    "description": "Make your dynamic content accessible by default with the HTML tag that time forgot.",
+    "site": "Den Odell",
+    "author": "",
+    "image": "https://denodell.com/_astro/html-best-kept-secret-output-tag.DudwjXl0_2a2Dh2.jpg",
+    "tag": "* that's true i have never used <output>",
+    "date": "2025-10-25"
+  },
+  {
     "title": "PocketCal",
     "url": "https://pocketcal.com/#N4IgziBcIEwAwwKwFoCMdl1SANCA5lANqgDGUceATsQLoC+DQA",
     "description": "Pick dates, share a link, and that's your calendar. PocketCal is a free, open-source web app that lets you select dates and instantly share them. No accounts, just a link, and nothing in your way.",
