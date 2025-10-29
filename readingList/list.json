@@ -1,5 +1,15 @@
 [
   {
+    "title": "From VS Code to Helix",
+    "url": "https://ergaster.org/posts/2025/10/29-vscode-to-helix/",
+    "description": "A Rustacean colleague kept singing Helix's praises. I discarded it because he's much smarter than I am, and I only ever use vim when I need to fiddle with files on a server. I like when things \"Just Work\" and didn't want to bother learning how to use Helix nor how to configure it.",
+    "site": "ergaster.org",
+    "author": "Thibault Martin",
+    "image": "https://ergaster.org/_astro/powerglove.BrQikrpD.png",
+    "tag": "** i need to check if the author is related to Helix in any ways",
+    "date": "2025-10-29"
+  },
+  {
     "title": "Boring Is What We Wanted - 512 Pixels",
     "url": "https://512pixels.net/2025/10/boring-is-what-we-wanted/",
     "description": "We are coming up on five years since the first M1 Macs shipped. It was an incredible time to be a Mac user. Those first Apple silicon Macs looked like the Intel machines they replaced, but they were better in every single way. In December 2020, John Gruber wrote: We knew this to be true: […]",
