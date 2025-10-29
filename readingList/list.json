@@ -1,5 +1,15 @@
 [
   {
+    "title": "uv is the best thing to happen to the Python ecosystem in a decade - Blog - Dr. Emily L. Hunt",
+    "url": "https://emily.space/posts/251023-uv",
+    "description": "Released in 2024, uv is hands-down the best tool for managing Python installations and dependencies. Here's why.",
+    "site": "emily.space",
+    "author": "Dr. Emily L. Hunt",
+    "image": "https://emily.space/assets/posts/251023-uv/header.webp",
+    "tag": "*** i feel there are lot of users, i think i should think about using it",
+    "date": "2025-10-29"
+  },
+  {
     "title": "From VS Code to Helix",
     "url": "https://ergaster.org/posts/2025/10/29-vscode-to-helix/",
     "description": "A Rustacean colleague kept singing Helix's praises. I discarded it because he's much smarter than I am, and I only ever use vim when I need to fiddle with files on a server. I like when things \"Just Work\" and didn't want to bother learning how to use Helix nor how to configure it.",
