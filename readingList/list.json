@@ -1,5 +1,15 @@
 [
   {
+    "title": "Backing up Spotify - Anna’s Blog",
+    "url": "https://annas-archive.li/blog/backing-up-spotify.html",
+    "description": "We backed up Spotify (metadata and music files). It’s distributed in bulk torrents (~300TB). It’s the world’s first “preservation archive” for music which is fully open (meaning it can easily be mirrored by anyone with enough disk space), with 86 million music files, representing around 99.6% of listens.",
+    "site": "annas-archive.li",
+    "author": "",
+    "image": "https://annas-archive.li/blog/spotify/sel_01_overview.png",
+    "tag": "** this is lovely and may be now llm will use it ",
+    "date": "2026-01-02"
+  },
+  {
     "title": "Why we trust strangers’ open source more than our colleagues’ - Frank DENIS random thoughts.",
     "url": "https://00f.net/2025/09/01/opensource-by-internal-contributors/",
     "description": "There’s a weird phenomenon I’ve noticed again and again in tech companies.Tell me if this sounds familiar:",
