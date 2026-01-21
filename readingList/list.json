@@ -1,5 +1,15 @@
 [
   {
+    "title": "Everyone hates OneDrive, Microsoft's cloud app that steals then deletes all your files - Boing Boing",
+    "url": "https://boingboing.net/2026/01/05/everyone-hates-onedrive-microsofts-cloud-app-that-steals-then-deletes-all-your-files.html",
+    "description": "OneDrive is Microsoft's cloud-based storage service, and it's aggressively pushed on users of Windows. They want your files on their servers, and are willing to use dark patterns to get…",
+    "site": "Boing Boing",
+    "author": "Rob Beschizza",
+    "image": "https://boingboing.net/wp-content/uploads/2026/01/onedrive.jpg",
+    "tag": "* really no example, no data just the idea",
+    "date": "2026-01-21"
+  },
+  {
     "title": "The Suck Is Why We're Here | nik.art",
     "url": "https://nik.art/the-suck-is-why-were-here/",
     "description": "On a catchup call, I told my friend Nick Wignall how someone had trained an AI model to write blog posts in my style. It was a pure research exercise on their part. The idea was to train the tool on my past work, then give it the headlines and opening paragraphs of my 2025 […]",
