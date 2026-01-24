@@ -1,5 +1,5 @@
 ---
-title: 'Letter to future: 2027'
+title: 'Letter to future -2027'
 date: 2026-01-15
 #permalink: /posts
 categories: Letters
@@ -22,12 +22,9 @@ By  next year at this time, I will have <br>
 I will rank myself after a year -- almost at the same time. 
 
 Happy new year 2026! 
-
 <br>
 <br>
-<br>
-This blog appears in the category: 
-<br>
+<i style="color: coffee;">This blog appears in the category: </i>
 <div class="post-categories">
   {% if post %}
     {% assign categories = post.categories %}
