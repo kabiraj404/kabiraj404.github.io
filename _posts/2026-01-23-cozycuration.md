@@ -2,7 +2,7 @@
 title: 'cozy curation'
 date: 2026-01-23
 #permalink: /posts
-categories: Tiny projects
+categories: Tiny_projects
 laout: post
 #comment: true
 ---

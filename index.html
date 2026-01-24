@@ -8,17 +8,14 @@ layout: default
      <h1 style="color:blue;"> Namaste </h1>
                 
       <p style="color:gray;" >
-        Hello and welcome to my blog! <br>
+        Thank you for taking the time to read my blog. <br>
         I excited to share my thoughts, ideas, and experiences with you. <br>
         I hope you find something here that resonates with you, inspires you, or simply makes you smile. <br>
-        Thank you for taking the time to read my blog. <br>
+        
         </p>
-
-     
 <hr style="height:1px;border-width:0;color:gray;background-color:GhostWhite">
 		
 </div>
-
 <br>
 
  <div class="flex-row">
@@ -36,7 +33,7 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | truncate: 50, "..." }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
