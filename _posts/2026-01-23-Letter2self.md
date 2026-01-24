@@ -10,7 +10,7 @@ laout: post
 
 Hi, <br>
 This is my first post! I want to check in with myself in a year. <br> 
-By  next year at this time, I will have <br>
+By  next year at this time, I will have:
 <ul> 
 <li>visited at least 2 states</li> 
 <li>submitted one manuscript</li> 
@@ -18,13 +18,13 @@ By  next year at this time, I will have <br>
 <li>written 15 blog posts</li> 
 <li>tried 12 new restaurants</li> 
 </ul>
-
-I will rank myself after a year -- almost at the same time. 
-
+I will rank myself after a year -- almost at the same time. <br>
 Happy new year 2026! 
 <br>
 <br>
-<i style="color: coffee;">This blog appears in the category: </i>
+<br>
+<br>
+<i style="color: #bf7039">This blog appears in the category: </i>
 <div class="post-categories">
   {% if post %}
     {% assign categories = post.categories %}
