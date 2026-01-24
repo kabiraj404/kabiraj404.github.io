@@ -9,11 +9,8 @@ laout: post
 
 
 Hi, <br>
-
-This is just for fun and it serves as my first post. I want to check-in with myself after a year. <br> 
-
+This is my first post! I want to check in with myself in a year. <br> 
 By  next year at this time, I will have <br>
-
 <ul> 
 <li>visited at least 2 states</li> 
 <li>submitted one manuscript</li> 
@@ -21,7 +18,6 @@ By  next year at this time, I will have <br>
 <li>written 15 blog posts</li> 
 <li>tried 12 new restaurants</li> 
 </ul>
-
 
 I will rank myself after a year -- almost at the same time. 
 

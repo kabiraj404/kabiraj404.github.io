@@ -7,17 +7,17 @@ laout: post
 #comment: true
 ---
 
-I love reading news articles and staying curious about whether my favorite writers have published something new, but I am super lazy. I do not like visiting their websites each time. Therefore, I still prefer the traditional approach of using RSS. 
+I love reading news articles and staying curious about whether my favorite writers have published something new, but I am super lazy. I do not like visiting their websites each time. Therefore, I still prefer the traditional approach of using RSS. <br>
 <br>
-RSS feeds allow us to track changes or new content on a website. Instead of going to the site or subscribing to emails, a website's RSS feed allows us to see updates in one place. It super relaxing to get all new updates from our favorite website automatically in one location without clutter. 
+RSS feeds allow us to track changes or new content on a website. Instead of going to the site or subscribing to emails, a website's RSS feed allows us to see updates in one place. It super relaxing to get all new updates from our favorite website automatically in one location without clutter. <br>
 <br>
-Initially, I searched for mobile RSS reader apps, but I could not find the best one for me. Those apps either had limited website support or required payment for full features. Hence, I forked [Static RSS reader generator] (https://github.com/pesarkhobeee/lovelyRSS) made by [paraphobia](https://github.com/pesarkhobeee). So far, I am having really good experince. Currently, I am following ~30 sites, some of them update multiple times a day while other only few times a year. 
+Initially, I searched for mobile RSS reader apps, but I could not find the best one for me. Those apps either had limited website support or required payment for full features. Hence, I forked [Static RSS reader generator](https://github.com/pesarkhobeee/lovelyRSS) made by [paraphobia](https://github.com/pesarkhobeee). So far, I am having really good experince. Currently, I am following ~30 sites, some of them update multiple times a day while other only few times a year. 
 <br>
-[Here is my curated RSS feeds] (https://kabiraj404.github.io/free/ ) 
+[Here is my curated RSS feeds](https://kabiraj404.github.io/free/ ) 
 <br>
-
+<br>
 Likewise, I wanted to keep the list of sites that I have read on the interest. 
-Bookmarking every page was not reasonable idea. Hence, I created almost complete and updated list of articles I have read on the internet. It is not for judgment but just for memory. 
+Bookmarking every page was not reasonable idea. Hence, I created almost complete and updated list of articles I have read on the internet. It is not for judgment but just for memory. <br>
 <br>
 [Here is my curated reading list]( https://kabiraj404.github.io/ReadingCatalog/ )
 <br>
@@ -27,9 +27,7 @@ I might add some summary plot or other analysis after I gather some data on what
 Happy reading. 
 <br>
 <br>
-<br>
 This blog appears in the category: 
-<br>
 <div class="post-categories">
   {% if post %}
     {% assign categories = post.categories %}
