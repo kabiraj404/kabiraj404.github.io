@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Categorized blogs 
+#title: Categorized blogs 
 permalink: /categories/
 ---
 
 
 
-#### All of the blogs are listed here, organized by category.  
+#### All blogs are listed here, organized by category.  
 
 <hr style="height:1px;border-width:0;color:gray;background-color:GhostWhite">
 
@@ -20,11 +20,13 @@ permalink: /categories/
 
     <h3 class="category-head">{{ category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
+    <ul style="padding-left: 20px;">
+      {% for post in site.categories[category_name] %}
+      <li class="archive-item">
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 {% endfor %}
 </div>
