@@ -8,7 +8,7 @@ layout: default
      <h1 style="color:blue;"> Namaste </h1>
                 
       <p style="color:gray;" >
-        Thank you for taking the time to visit at this web-page. This is my personal blog, where I'll share snippets from my life's adventures,experiences and lessons learned. <br>
+       This is my personal blog, where I'll share snippets from my life's adventures,experiences and lessons learned. <br>
 		    Click <a class="break-long-url" target="_blank" href="https://kabiraj404.github.io/blog/about/">About</a> if you want to know about me.  
         </p>
 
