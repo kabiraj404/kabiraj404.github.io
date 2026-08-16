@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Categories
 permalink: /categories/
 ---
 
@@ -17,7 +16,6 @@ permalink: /categories/
     <section id="{{ category_name | slugify }}" class="category-group">
       <div class="category-meta">
         <h2 class="category-title">{{ category_name }}</h2>
-        <span class="category-count">{{ category_posts.size }}</span>
       </div>
 
       <ul class="category-posts">
