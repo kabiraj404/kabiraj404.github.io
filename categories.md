@@ -4,45 +4,32 @@ title: Categories
 permalink: /categories/
 ---
 
-<section class="archive-shell">
-  <header class="list-header">
-    <p class="page-subtitle">All posts grouped by topic for quick navigation.</p>
-  </header>
+<header class="category-index-header">
+  <p class="subtitle">All posts grouped by topic.</p>
+</header>
 
-  <!-- <div id="archives" class="archive-grid">
-  {% for category in site.categories %}
-    <section class="archive-group">
-      {% capture category_name %}{{ category | first }}{% endcapture %}
-      <a class="archive-anchor" id="{{ category_name | slugize }}"></a>
+<div class="category-grid">
+  {% assign sorted_categories = site.categories | sort %}
+  {% for category in sorted_categories %}
+    {% assign category_name = category | first %}
+    {% assign category_posts = category | last %}
+    
+    <section id="{{ category_name | slugify }}" class="category-group">
+      <div class="category-meta">
+        <h2 class="category-title">{{ category_name }}</h2>
+        <span class="category-count">{{ category_posts.size }}</span>
+      </div>
 
-      <h3 class="category-head">{{ category_name }} <span>({{ site.categories[category_name] | size }})</span></h3>
-      {% for post in site.categories[category_name] %}
-      <article class="archive-item">
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-      </article>
-      {% endfor %}
+      <ul class="category-posts">
+        {% for post in category_posts %}
+          <li class="post-row">
+            <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
+            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%b %d, %Y" }}
+            </time>
+          </li>
+        {% endfor %}
+      </ul>
     </section>
-    {% endfor %}
-  </div>
-</section> -->
-
-
-<div id="archives" class = "archieve-grid">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
-{% endfor %}
+  {% endfor %}
 </div>
-
-
