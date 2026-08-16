@@ -27,8 +27,11 @@
           </div>
 
           <nav>
+            <a href="{{ site.baseurl }}/">Home</a>
             <a href="{{ site.baseurl }}/blog">Blog</a>
             <a href="{{ site.baseurl }}/categories">Categories</a>
+            <a href="{{ site.baseurl }}/feedback">Feedback</a>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">Light</button>
           </nav>
         </header>
       </div>
@@ -45,6 +48,45 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      (function () {
+        var storageKey = "site-theme";
+        var body = document.body;
+        var toggle = document.getElementById("theme-toggle");
+
+        function applyTheme(theme) {
+          var isLight = theme === "light";
+          body.classList.toggle("theme-light", isLight);
+
+          if (toggle) {
+            toggle.textContent = isLight ? "Dark" : "Light";
+            toggle.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
+          }
+        }
+
+        var savedTheme = "dark";
+        try {
+          savedTheme = localStorage.getItem(storageKey) || "dark";
+        } catch (e) {
+          savedTheme = "dark";
+        }
+
+        applyTheme(savedTheme);
+
+        if (toggle) {
+          toggle.addEventListener("click", function () {
+            var nextTheme = body.classList.contains("theme-light") ? "dark" : "light";
+            try {
+              localStorage.setItem(storageKey, nextTheme);
+            } catch (e) {
+              // Ignore storage failures and still apply the theme.
+            }
+            applyTheme(nextTheme);
+          });
+        }
+      })();
+    </script>
 
     {% include analytics.html %}
   </body>

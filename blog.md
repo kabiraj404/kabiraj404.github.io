@@ -7,6 +7,13 @@ permalink: /blog/
 <section class="listing-shell">
   <header class="list-header">
     <h1 class="page-title">Latest Blogs</h1>
+    <p class="page-subtitle">A focused reading space for all posts and related pages.</p>
+    <div class="blog-hub-links" aria-label="Blog hub links">
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/categories">Categories</a>
+      <a href="{{ site.baseurl }}/feedback">Feedback</a>
+      <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+    </div>
   </header>
 
   <div class="posts post-list">
