@@ -4,13 +4,13 @@ layout: default
 
 <!--arranging few introductoray sentence in the front page-->
 
- <div >
+ <!-- <div >
      <h1 style="color:blue;"> Namaste </h1>
                 
       <p style="color:gray;" >
        This is my personal blog, where I'll share snippets from my life's adventures,experiences and lessons learned. <br>
 		    Click <a class="break-long-url" target="_blank" href="https://kabiraj404.github.io/blog/about/">About</a> if you want to know about me.  
-        </p>
+        </p> -->
 
      
 <hr style="height:1px;border-width:0;color:gray;background-color:GhostWhite">
