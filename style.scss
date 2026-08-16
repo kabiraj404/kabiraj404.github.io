@@ -208,14 +208,14 @@ img {
   cursor: pointer;
   font-family: "Newsreader", Georgia, serif;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 36px;
   letter-spacing: 0.02em;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: #8ea3bd;
-  font-size: 15px;
+  font-size: 16px;
 
   @include mobile {
     margin: 3px 0;
@@ -417,7 +417,7 @@ body:not(.home-page) #main {
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #d4e6fb;
+  color: #2f86e9;
   border: 1px solid rgba(93, 189, 255, 0.34);
   border-radius: 999px;
   padding: 6px 10px;
