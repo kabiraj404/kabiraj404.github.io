@@ -7,7 +7,6 @@ permalink: /blog/
 <section class="listing-shell">
   <header class="list-header">
     <h1 class="page-title">Latest Blogs</h1>
-    <p class="page-subtitle">Short notes on projects, ideas, and experiments.</p>
   </header>
 
   <div class="posts post-list">
