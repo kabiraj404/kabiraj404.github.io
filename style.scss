@@ -290,7 +290,7 @@ footer {
   position: relative;
 }
 
-#main::before {
+body.home-page #main::before {
   content: "";
   position: absolute;
   inset: -30px -40px auto -40px;
@@ -449,7 +449,7 @@ footer {
 }
 
 @include mobile {
-  #main::before {
+  body.home-page #main::before {
     inset: -18px -12px auto -12px;
     height: 230px;
     border-radius: 14px;

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Categorized blogs 
+#title: Categorized blogs 
 permalink: /categories/
 ---
 
 
 
-#### All of the blogs are listed here, organized by category. Please click <a class="break-long-url" target="_blank" href="https://kabiraj404.github.io/blog/">HERE</a> to return to the home page. 
+#### All the blogs are listed here, organized by category. 
 
 <hr style="height:1px;border-width:0;color:gray;background-color:GhostWhite">
 
