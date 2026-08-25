@@ -1,6 +1,6 @@
 ---
-title: 'Letter to future -2027'
-date: 2026-01-15
+title: 'Self check -2026'
+date: 2026-07-15
 #permalink: /posts
 categories: Letters
 laout: post
@@ -9,17 +9,18 @@ laout: post
 
 
 Hi, <br>
-This is my first post! I want to check in with myself in a year. <br> 
+This is my first post! <br>
+I want to check in June 2027 ie after a a year about some of the milestones that I have set for myself <br> 
 By  next year at this time, I will have:
 <ul> 
-<li>visited at least 2 states</li> 
+<li>visited at least 2 new states</li> 
 <li>submitted one manuscript</li> 
 <li>read 10 books, watched 20 movies</li> 
 <li>written 15 blog posts</li> 
 <li>tried 12 new restaurants</li> 
 </ul>
-I will rank myself after a year -- almost at the same time. <br>
-Happy new year 2026! 
+I will rank myself after a year  <br>
+
 <br>
 <br>
 <br>
