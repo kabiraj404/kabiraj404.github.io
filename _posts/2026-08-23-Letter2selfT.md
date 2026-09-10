@@ -1,6 +1,6 @@
 ---
-title: 'Self check -2026'
-date: 2026-07-15
+title: 'Self check -2027'
+date: 2026-07-01
 #permalink: /posts
 categories: Letters
 laout: post
@@ -10,18 +10,21 @@ laout: post
 
 Hi, <br>
 This is my first post! <br>
-I want to check in June 2027 ie after a a year about some of the milestones that I have set for myself <br> 
-By  next year at this time, I will have:
+I want to read this letter in January 2027, and reflect on the milestones I set for 2026. By then, I hope to have:
 <ul> 
-<li>visited at least 2 new states</li> 
-<li>submitted one manuscript</li> 
+personally: 
+<li>visited 2 new states</li>
+<li>visited 1 national park or place of interest</li>
+<li>tried 12 new restaurants</li>
+<li>visited 1 friend's home or invited them </li>
+professionally: 
+<li>submitted 1 manuscript</li> 
+mentally: 
 <li>read 10 books, watched 20 movies</li> 
-<li>written 15 blog posts</li> 
-<li>tried 12 new restaurants</li> 
+<li>written 4 new blog posts</li>
+ 
 </ul>
-I will rank myself after a year  <br>
-
-<br>
+<i>As this is first post and is writen in July, but it will include all activities throughout 2026. I plan to score myself based on how well I follow my plans and review it annually. </i> <br>
 <br>
 <br>
 <br>
