@@ -9,9 +9,9 @@ laout: post
 
 Here are list of the websites that I found interesting, during this month. 
 
-<strong> It's an internet thing: </strong> <br>
-<ul> 
-<li>[The digital graveyard ](https://rip.so/) Accessed on 09/09/2026 </li>
+<strong>It's an internet thing</strong><br> 
+<ul>  
+  <li><a href="https://rip.so/">The digital graveyard</a></li>  
 </ul>
 
 <strong> It's a collection:  </strong> <br>

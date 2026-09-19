@@ -9,7 +9,8 @@ laout: post
 
 I love reading news articles and staying curious about whether my favorite writers have published something new, but I am super lazy. I do not like visiting their websites each time. Therefore, I prefer the traditional approach of using RSS. Actually, RSS feeds allow me to track new content on a website, instead of going to the site or subscribing to their emails. For me, it is super relaxing to get new updates without clutter. <br>
 <br>
-Initially, I searched for mobile RSS reader apps, but I could not find the best one for me. Those apps either had limited website support or required payment for full features. Hence, I forked [Static RSS reader generator](https://github.com/pesarkhobeee/lovelyRSS) made by [paraphobia](https://github.com/pesarkhobeee). I am happy with it. Currently, I am following ~30 sites, some of them update multiple times a day while other only few times a year. 
+Initially, I searched for mobile RSS reader apps, but I could not find the best one for me. Those apps either had limited website support or required payment for full features. Hence, I forked [RSS reader generator](https://github.com/pesarkhobeee/lovelyRSS) made by [paraphobia](https://github.com/pesarkhobeee). I am happy with it. Currently, I am following ~30 sites, some of them update multiple times a day while other only few times a year. 
+<br>
 <br>
 [Here is my curated RSS feeds](https://kabiraj404.github.io/rss/ ) 
 <br>
