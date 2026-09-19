@@ -13,40 +13,30 @@
 
 :root {
   --font-serif: "Newsreader", Georgia, serif;
-  --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
   
   // Dark Theme (Default)
   --bg-main: #0a0d12;
   --bg-surface: #121721;
-  --bg-surface-hover: #18202e;
-  --bg-glass: rgba(10, 13, 18, 0.75);
-  
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.16);
   
   --text-primary: #f0f4f8;
-  --text-secondary: #8c9ba stroke;
-  --text-muted: #627285;
+  --text-secondary: #8c9ba5; // Fixed broken syntax (#8c9ba stroke)
+  --text-muted: #5e6d7e;
   --accent: #3b82f6;
   --accent-hover: #60a5fa;
-  --accent-light: rgba(59, 130, 246, 0.1);
 }
 
 body.theme-light {
-  --bg-main: #fcfcfc;
-  --bg-surface: #ffffff;
-  --bg-surface-hover: #f4f6f8;
-  --bg-glass: rgba(252, 252, 252, 0.85);
-  
+  --bg-main: #ffffff;
+  --bg-surface: #f8fafc;
   --border-subtle: rgba(0, 0, 0, 0.06);
-  --border-strong: rgba(0, 0, 0, 0.12);
   
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #94a3b8;
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
-  --accent-light: rgba(37, 99, 235, 0.06);
 }
 
 /**************/
@@ -66,17 +56,16 @@ body {
   background-color: var(--bg-main);
   font-family: var(--font-sans);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--text-secondary);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 820px;
-  padding: 0 24px;
+  max-width: 720px; // Slightly tighter container for optimal reading lengths
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -84,8 +73,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
   font-family: var(--font-serif);
   font-weight: 500;
-  line-height: 1.2;
-  margin: 1.8em 0 0.6em;
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
   letter-spacing: -0.01em;
 
   a {
@@ -94,10 +83,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 { font-size: clamp(32px, 5vw, 44px); }
-h2 { font-size: clamp(24px, 4vw, 32px); }
-h3 { font-size: clamp(20px, 3vw, 24px); }
-h4 { font-size: 18px; font-family: var(--font-sans); font-weight: 600; }
+h1 { font-size: clamp(30px, 4.5vw, 40px); }
+h2 { font-size: clamp(22px, 3.5vw, 28px); }
+h3 { font-size: clamp(18px, 2.5vw, 22px); }
+h4 { font-size: 16px; font-family: var(--font-sans); font-weight: 600; }
 
 p {
   margin: 1.2em 0;
@@ -115,10 +104,10 @@ a {
 
 ul, ol {
   margin: 1.2em 0;
-  padding-left: 1.5em;
+  padding-left: 1.2em;
   
   li {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.3em;
   }
 }
 
@@ -129,15 +118,13 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .date {
   font-family: var(--font-sans);
   font-size: 13px;
   color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 ::selection {
@@ -154,32 +141,26 @@ img {
 //
 
 .wrapper-masthead {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: var(--bg-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  padding: 32px 0 20px;
+  margin-bottom: 32px;
   border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 40px;
 }
 
 .masthead {
-  padding: 18px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @include mobile {
     flex-direction: column;
-    gap: 16px;
-    text-align: center;
+    gap: 12px;
+    align-items: flex-start;
   }
 }
 
 .site-avatar {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
 
   img {
@@ -191,7 +172,7 @@ img {
 .site-info {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .site-name {
@@ -199,8 +180,7 @@ img {
   color: var(--text-primary);
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 22px;
-  letter-spacing: -0.01em;
+  font-size: 20px;
 }
 
 .site-description {
@@ -209,67 +189,58 @@ img {
   font-size: 14px;
 
   @include mobile {
-    display: none; // Minimalist optimization for small screens
+    display: none;
   }
 }
 
 nav {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   font-size: 14px;
 
   a {
     color: var(--text-secondary);
-    font-weight: 500;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.15s ease;
+    font-weight: 400;
+    transition: color 0.15s ease;
 
     &:hover {
       color: var(--text-primary);
-      background: var(--bg-surface-hover);
     }
   }
 }
 
 .theme-toggle {
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-family: var(--font-sans);
   font-size: 13px;
-  font-weight: 500;
-  border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 6px 12px;
+  border: none;
+  padding: 0;
   background: transparent;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease;
 
   &:hover {
     color: var(--text-primary);
-    border-color: var(--border-strong);
-    background: var(--bg-surface-hover);
   }
 }
 
 //
-// Main & Cards
+// Main Content (Flat Minimalist Layout)
 //
 
 .page-shell,
 .post-shell,
 .listing-shell,
 .archive-shell {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: clamp(24px, 4vw, 40px);
+  background: transparent;
+  padding: 0;
 }
 
 .page-title,
 .post-title,
 .list-header h1 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--text-primary);
   font-family: var(--font-serif);
   font-weight: 500;
@@ -279,15 +250,13 @@ nav {
 .page-subtitle {
   margin: 0 0 24px;
   color: var(--text-muted);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
 }
 
 .post-date,
 .post-list-date {
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 13px;
   color: var(--text-muted);
 }
 
@@ -298,16 +267,16 @@ nav {
 
   h2, h3 {
     color: var(--text-primary);
-    margin-top: 1.6em;
+    margin-top: 1.8em;
   }
 
   blockquote {
     margin: 1.8em 0;
-    padding: 4px 0 4px 20px;
-    border-left: 2px solid var(--accent);
+    padding-left: 16px;
+    border-left: 2px solid var(--text-primary);
     color: var(--text-primary);
     font-family: var(--font-serif);
-    font-size: 20px;
+    font-size: 19px;
     font-style: italic;
   }
 }
@@ -316,23 +285,22 @@ nav {
 .post-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 28px;
 }
 
 .post-list > .post-card {
-  border: 1px solid var(--border-subtle);
-  border-radius: 10px;
-  background: var(--bg-surface);
-  padding: 20px 24px;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  border: none;
+  border-bottom: 1px solid var(--border-subtle);
+  background: transparent;
+  padding: 0 0 24px 0;
+  border-radius: 0;
 
-  &:hover {
-    border-color: var(--border-strong);
-    transform: translateY(-1px);
+  &:last-child {
+    border-bottom: none;
   }
 
   h2 {
-    margin: 4px 0 8px;
+    margin: 4px 0 6px;
     font-size: 22px;
 
     a {
@@ -349,11 +317,11 @@ nav {
 
   .read-more {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 8px;
     font-size: 13px;
     font-weight: 500;
     color: var(--accent);
-    
+
     &:hover {
       color: var(--accent-hover);
     }
@@ -367,36 +335,33 @@ nav {
 .archive-grid {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .archive-group {
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 24px;
-
-  &:last-child {
-    border-bottom: none;
-  }
+  border: none;
+  padding: 0;
+  background: transparent;
 }
 
 .category-head {
-  margin: 0 0 16px;
-  font-size: 20px;
+  margin: 0 0 12px;
+  font-size: 18px;
   color: var(--text-primary);
 
   span {
     color: var(--text-muted);
-    font-size: 14px;
-    margin-left: 6px;
+    font-size: 13px;
+    margin-left: 4px;
   }
 }
 
 .archive-item {
-  padding: 8px 0;
+  padding: 6px 0;
 
   h4 {
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
 
     a {
@@ -411,48 +376,46 @@ nav {
 //
 
 body.home-page #main::before {
-  display: none; // Removed decorative gradient background for modern minimalism
+  display: none;
 }
 
 .home-hero {
-  padding: 20px 0 40px;
+  padding: 12px 0 32px;
 }
 
 .hero-kicker {
   font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--accent);
   margin-bottom: 8px;
 }
 
 .hero-title {
   margin: 0;
-  font-size: clamp(36px, 6vw, 56px);
+  font-size: clamp(32px, 5.5vw, 48px);
   color: var(--text-primary);
   letter-spacing: -0.02em;
 }
 
 .hero-tagline {
-  font-size: 20px;
+  font-size: 19px;
   color: var(--text-secondary);
-  margin: 12px 0 0;
+  margin: 10px 0 0;
   font-weight: 400;
 }
 
 .hero-copy {
-  max-width: 640px;
-  margin-top: 16px;
-  font-size: 16px;
+  max-width: 600px;
+  margin-top: 14px;
+  font-size: 15px;
   color: var(--text-muted);
 }
 
 .hero-facts {
-  margin-top: 32px;
+  margin-top: 28px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 12px;
 
   @include mobile {
     grid-template-columns: 1fr;
@@ -461,24 +424,22 @@ body.home-page #main::before {
 
 .fact-item {
   border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 16px;
-  background: var(--bg-surface);
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: transparent;
 }
 
 .fact-label {
   display: block;
   font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: var(--text-muted);
 }
 
 .fact-value {
   display: block;
-  margin-top: 4px;
+  margin-top: 2px;
   color: var(--text-primary);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -487,18 +448,18 @@ body.home-page #main::before {
 //
 
 .wrapper-footer {
-  margin-top: 80px;
+  margin-top: 60px;
   border-top: 1px solid var(--border-subtle);
-  background: var(--bg-main);
+  background: transparent;
 }
 
 footer {
-  padding: 40px 0;
+  padding: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
 }
 
-// Syntax highlighting & Icon imports preserved at bottom
+// Syntax highlighting & Icon imports preserved
 @import "highlights";
 @import "svg-icons";
