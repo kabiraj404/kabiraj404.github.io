@@ -406,6 +406,13 @@ nav {
   margin-bottom: 34px;
   border-radius: 0;
 
+  .post-list-date {
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
   &:last-child {
     border-bottom: none;
     margin-bottom: 0;
@@ -434,13 +441,22 @@ nav {
     display: inline-block;
     margin-top: 14px;
     font-size: 12px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     font-weight: 500;
     color: var(--accent);
 
+    &::after {
+      content: "  ->";
+      transition: padding-left 0.15s ease;
+    }
+
     &:hover {
       color: var(--accent-hover);
+
+      &::after {
+        padding-left: 3px;
+      }
     }
   }
 }

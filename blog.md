@@ -18,7 +18,7 @@ permalink: /blog/
       <p class="post-list-date">{{ post.date | date: "%b %e, %Y" }}</p>
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="entry post-excerpt">
-        {{ post.excerpt | strip_html | strip_newlines | truncatewords: 30 }}
+        {{ post.excerpt | strip_html | strip_newlines | truncatewords: 20 }}
       </div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>

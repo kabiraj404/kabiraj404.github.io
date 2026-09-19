@@ -69,7 +69,7 @@ layout: null
       .topbar-inner {
         width: min(var(--max), calc(100% - 2rem));
         margin: 0 auto;
-        min-height: 72px;
+        min-height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -78,7 +78,7 @@ layout: null
 
       .brand {
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.18rem;
         text-decoration: none;
         color: var(--text);
       }
@@ -734,16 +734,23 @@ layout: null
         var homeToggle = document.getElementById("home-theme-toggle");
 
         function applyTheme(theme) {
-          var isLight = theme === "dark";
-          document.body.classList.toggle("theme-light", isLight);
-          document.body.classList.toggle("theme-dark", !isLight);
+          var isDark = theme === "dark"; // Correct variable naming and boolean check
+          
+          // Toggle theme-dark class on <body>
+          document.body.classList.toggle("theme-dark", isDark);
+          document.body.classList.toggle("theme-light", !isDark);
 
+          // Update button text to display what the NEXT action will be
           if (homeToggle) {
-            homeToggle.textContent = isLight ? "Dark" : "Light";
-            homeToggle.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
+            homeToggle.textContent = isDark ? "Light" : "Dark";
+            homeToggle.setAttribute(
+              "aria-label",
+              isDark ? "Switch to light theme" : "Switch to dark theme"
+            );
           }
         }
 
+        // Load saved preference or fallback to default "light"
         var savedTheme = "light";
         try {
           savedTheme = localStorage.getItem(storageKey) === "dark" ? "dark" : "light";
@@ -754,11 +761,14 @@ layout: null
 
         if (homeToggle) {
           homeToggle.addEventListener("click", function () {
-            var nextTheme = document.body.classList.contains("theme-light") ? "dark" : "light";
+            // Check if body currently has dark theme and flip it
+            var currentIsDark = document.body.classList.contains("theme-dark");
+            var nextTheme = currentIsDark ? "light" : "dark";
+            
             try {
               localStorage.setItem(storageKey, nextTheme);
             } catch (e) {
-              // Ignore storage failures and still apply the theme.
+              // Fallback if local storage is restricted
             }
             applyTheme(nextTheme);
           });
