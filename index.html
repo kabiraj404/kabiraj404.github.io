@@ -14,13 +14,13 @@ layout: null
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
       :root {
-        --panel: #090f18;
-        --panel-soft: #111a28;
-        --panel-border: rgba(126, 146, 170, 0.28);
-        --text: #e5edf8;
-        --text-soft: #98a8bc;
-        --accent: #63c5ff;
-        --max: 1120px;
+        --panel: #fbfaf7;
+        --panel-soft: #f2f0eb;
+        --panel-border: #d9d6cf;
+        --text: #202522;
+        --text-soft: #68706b;
+        --accent: #356859;
+        --max: 860px;
       }
 
       * {
@@ -34,9 +34,9 @@ layout: null
       body {
         margin: 0;
         font-family: "Manrope", "Helvetica Neue", sans-serif;
-        font-size: clamp(16px, 1.15vw, 19px);
+        font-size: 16px;
         color: var(--text);
-        background: radial-gradient(circle at 10% 10%, #122136 0%, #090f18 48%, #070b12 100%);
+        background: var(--panel);
         min-height: 100vh;
       }
 
@@ -50,18 +50,13 @@ layout: null
       }
 
       .topbar {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        backdrop-filter: blur(8px);
-        background: rgba(7, 12, 20, 0.86);
-        border-bottom: 1px solid rgba(126, 146, 170, 0.24);
+        border-bottom: 1px solid var(--panel-border);
       }
 
       .topbar-inner {
         width: min(var(--max), calc(100% - 2rem));
         margin: 0 auto;
-        min-height: 66px;
+        min-height: 72px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -69,8 +64,8 @@ layout: null
       }
 
       .brand {
-        font-weight: 700;
-        font-size: 1.08rem;
+        font-weight: 600;
+        font-size: 1rem;
         text-decoration: none;
         color: var(--text);
       }
@@ -80,7 +75,7 @@ layout: null
         color: var(--text-soft);
         font-size: 13px;
         font-family: "Manrope", "Helvetica Neue", sans-serif;
-        letter-spacing: 0.08em;
+        margin-top: 2px;
       }
 
       .quick-nav {
@@ -94,75 +89,71 @@ layout: null
         text-decoration: none;
         color: var(--text-soft);
         font-size: 14px;
-        border: 1px solid transparent;
-        padding: 7px 10px;
-        border-radius: 10px;
+        border-bottom: 1px solid transparent;
+        padding: 4px 0;
         transition: 0.2s ease;
       }
 
       .quick-nav a:hover,
       .quick-nav a.active {
         color: var(--text);
-        border-color: var(--panel-border);
-        background: rgba(99, 197, 255, 0.15);
+        border-color: var(--accent);
+        background: transparent;
       }
 
       .theme-toggle {
-        border: 1px solid var(--panel-border);
+        border: 0;
         color: var(--text-soft);
         background: transparent;
         font-size: 14px;
-        padding: 7px 10px;
-        border-radius: 10px;
+        padding: 4px 0;
         cursor: pointer;
         transition: 0.2s ease;
       }
 
       .theme-toggle:hover {
         color: var(--text);
-        background: rgba(99, 197, 255, 0.15);
+        background: transparent;
       }
 
       main {
         width: min(var(--max), calc(100% - 2rem));
-        margin: 26px auto 56px;
+        margin: 72px auto 96px;
       }
 
       section {
-        background: rgba(14, 22, 34, 0.88);
-        border: 1px solid var(--panel-border);
-        border-radius: 20px;
-        margin-bottom: 22px;
-        padding: clamp(18px, 3vw, 34px);
+        margin-bottom: 72px;
+        padding: 0;
       }
 
       .hero {
-        display: grid;
-        grid-template-columns: 1.4fr 1fr;
-        gap: 24px;
-        align-items: center;
+        display: block;
+        max-width: 700px;
       }
 
       .hero-kicker {
         font-family: "Manrope", "Helvetica Neue", sans-serif;
         margin: 0;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
         color: var(--accent);
       }
 
       h1 {
-        margin: 8px 0 10px;
-        font-size: clamp(2rem, 6vw, 4rem);
-        line-height: 1.06;
+        margin: 12px 0 20px;
+        font-family: Georgia, serif;
+        font-size: clamp(2.5rem, 7vw, 4.5rem);
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.04em;
       }
 
       .hero-copy {
         color: var(--text-soft);
         max-width: 60ch;
         margin: 0;
-        font-size: clamp(15px, 1.25vw, 18px);
-        line-height: 1.55;
+        font-size: 18px;
+        line-height: 1.65;
       }
 
       .hero-links {
@@ -207,17 +198,17 @@ layout: null
       }
 
       .facts {
-        margin-top: 4px;
+        margin-top: 48px;
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        border-top: 1px solid var(--panel-border);
+        padding-top: 18px;
       }
 
       .fact {
         border: 0;
-        border-bottom: 1px dashed rgba(14, 165, 233, 0.35);
-        border-radius: 0;
-        padding: 8px 0;
+        padding: 0;
         background: transparent;
       }
 
@@ -229,7 +220,7 @@ layout: null
         display: block;
         font-size: 11px;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.1em;
         color: var(--accent);
         font-family: "Manrope", "Helvetica Neue", sans-serif;
       }
@@ -265,7 +256,7 @@ layout: null
       .link-grid {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 0;
         max-width: 760px;
         margin: 0 auto;
       }
@@ -281,11 +272,11 @@ layout: null
         justify-content: space-between;
         text-decoration: none;
         color: var(--text);
-        border: 1px solid rgba(126, 146, 170, 0.24);
-        border-radius: 12px;
-        padding: 9px 11px;
-        background: rgba(12, 20, 31, 0.92);
-        box-shadow: 0 8px 20px -16px rgba(0, 0, 0, 0.7);
+        border: 0;
+        border-top: 1px solid var(--panel-border);
+        border-radius: 0;
+        padding: 16px 0;
+        background: transparent;
         position: relative;
         overflow: hidden;
         transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
@@ -297,10 +288,9 @@ layout: null
 
       .link-item:hover,
       .link-item:focus-visible {
-        transform: translateY(-3px);
-        border-color: rgba(99, 197, 255, 0.6);
-        background: rgba(14, 24, 38, 0.98);
-        box-shadow: 0 18px 28px -18px rgba(0, 0, 0, 0.8);
+        transform: none;
+        border-color: var(--accent);
+        background: transparent;
       }
 
       .link-item:focus-visible {
@@ -317,19 +307,14 @@ layout: null
       }
 
       .link-logo {
-        width: 24px;
-        height: 24px;
-        border-radius: 999px;
-        object-fit: cover;
-        border: 1px solid rgba(30, 41, 59, 0.12);
-        flex-shrink: 0;
+        display: none;
       }
 
       .link-main {
         position: relative;
         z-index: 1;
         min-width: 0;
-        text-align: center;
+        text-align: left;
         width: 100%;
       }
 
@@ -412,7 +397,7 @@ layout: null
       .free-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
+        gap: 18px;
         max-width: 760px;
         margin: 0 auto;
       }
@@ -511,10 +496,10 @@ layout: null
       .social-row a {
         text-decoration: none;
         color: var(--text);
-        border: 1px solid rgba(126, 146, 170, 0.24);
-        border-radius: 12px;
-        padding: 10px 12px;
-        background: rgba(12, 20, 31, 0.92);
+        border: 0;
+        border-bottom: 1px solid var(--panel-border);
+        padding: 10px 0;
+        background: transparent;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -526,10 +511,9 @@ layout: null
 
       .social-row a:hover,
       .social-row a:focus-visible {
-        transform: translateY(-3px);
-        border-color: rgba(14, 165, 233, 0.45);
-        background: #ffffff;
-        box-shadow: 0 18px 28px -18px rgba(14, 23, 42, 0.56);
+        transform: none;
+        border-color: var(--accent);
+        background: transparent;
       }
 
       .social-row a:focus-visible {
@@ -584,6 +568,10 @@ layout: null
 
         .quick-nav {
           justify-content: flex-start;
+        }
+
+        .facts {
+          grid-template-columns: 1fr;
         }
 
         .theme-toggle {
@@ -708,6 +696,7 @@ layout: null
       <section class="hero" id="home">
         <div>
           <p class="hero-kicker">Namaste</p>
+          <h1>{{ site.name }}</h1>
 
           <p class="hero-copy">
            Thanks for stopping by!<br>
