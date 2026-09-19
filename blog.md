@@ -6,7 +6,7 @@ permalink: /blog/
 
 <section class="listing-shell">
   <header class="list-header">
-    <h1 class="page-title">Latest Blogs</h1>
+    <h1 class="page-title">Latest blogs</h1>
     <div class="blog-hub-links" aria-label="Blog hub links">
       <a href="{{ site.baseurl }}/feed.xml">RSS</a>
     </div>
