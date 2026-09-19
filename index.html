@@ -744,9 +744,9 @@ layout: null
           }
         }
 
-        var savedTheme = "dark";
+        var savedTheme = "light";
         try {
-          savedTheme = localStorage.getItem(storageKey) || "light";
+          savedTheme = localStorage.getItem(storageKey) === "dark" ? "dark" : "light";
         } catch (e) {
           savedTheme = "light";
         }
