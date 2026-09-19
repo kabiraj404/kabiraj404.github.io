@@ -7,34 +7,28 @@ laout: post
 #comment: true
 ---
 
-Here are list of the websites that I found interesting, during this month. 
+Here is a list of websites I found interesting this month.
 
-<strong>It's an internet thing</strong><br> 
-<ul>  
-  <li><a href="https://rip.so/">The digital graveyard</a></li>  
-</ul>
+**It's an Internet Thing**
+* [The digital graveyard](https://rip.so/)
 
-<strong> It's a collection:  </strong> <br>
-<ul> 
-<li>[Damn interesting](https://www.damninteresting.com/curated-links/) Accessed on 09/09/2026 </li>
-<li>[Bear discovery feed](https://bearblog.dev/discover/) Accessed on 09/09/2026 </li>
-<li>[Classic Archive](https://classics.mit.edu/index.html) Accessed on 09/09/2026 </li>
-<li>[Wisdom Library](https://www.wisdomlib.org/hinduism/book/shiva-purana-english) Accessed on 09/09/2026 </li>
-</ul>
+**Collections** (Accessed Sep 09, 2026)
+* [Damn Interesting](https://www.damninteresting.com/curated-links/)
+* [Bear Discovery Feed](https://bearblog.dev/discover/)
+* [Classic Archive](https://classics.mit.edu/index.html)
+* [Wisdom Library](https://www.wisdomlib.org/hinduism/book/shiva-purana-english)
 
-<strong> Daily Games </strong> Accessed on 09/09/2026  <br>
-<ul> 
-<li>[Dungeon](https://dailydungeon.net/) </li>
-<li>[Suffalo](https://www.newyorker.com/crossword-puzzles-and-games) </li>
-<li>[Connections](https://www.nytimes.com/games/connections) </li>
-<li>[Travle](https://travle.earth/) </li>
-<li>[Travle_USA](https://travle.earth/usa)</li>
-<li>[Map](https://maptap.gg/)  </li>
-<li>[Akari](https://dailyakari.com/) </li>
-<li>[Fields](https://inkwellgames.com/games/fields/) </li>
-<li>[Coding Challenge](https://www.freecodecamp.org/learn/daily-coding-challenge/archive) </li>
-<li>[Food Gusser](https://www.foodguessr.com/game/daily) </li>
-</ul>
+**Daily Games** (Accessed Sep 09, 2026)
+* [Dungeon](https://dailydungeon.net/)
+* [Suffalo](https://www.newyorker.com/crossword-puzzles-and-games)
+* [Connections](https://www.nytimes.com/games/connections)
+* [Travle](https://travle.earth/)
+* [Travle USA](https://travle.earth/usa)
+* [Map](https://maptap.gg/)
+* [Akari](https://dailyakari.com/)
+* [Fields](https://inkwellgames.com/games/fields/)
+* [Coding Challenge](https://www.freecodecamp.org/learn/daily-coding-challenge/archive)
+* [Food Guessr](https://www.foodguessr.com/game/daily)
 
 
 <br>
