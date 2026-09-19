@@ -22,7 +22,7 @@ permalink: /categories/
         {% for post in category_posts %}
           <li class="post-row">
             <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: %Y, %d "%b" }}
+              {{ post.date | date: "%Y, %d %b" }}
             <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
             </time>
           </li>
