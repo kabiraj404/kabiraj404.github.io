@@ -32,7 +32,7 @@ Here are list of the websites that I found interesting, during this month.
 <li>[Map](https://maptap.gg/)  </li>
 <li>[Akari](https://dailyakari.com/) </li>
 <li>[Fields](https://inkwellgames.com/games/fields/) </li>
-<li>[Coding Challenge](https://inkwellgames.com/games/fields/) </li>
+<li>[Coding Challenge](https://www.freecodecamp.org/learn/daily-coding-challenge/archive) </li>
 <li>[Food Gusser](https://www.foodguessr.com/game/daily) </li>
 </ul>
 
