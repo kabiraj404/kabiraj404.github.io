@@ -15,7 +15,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body class="{% if page.url == '/' %}home-page{% endif %}">
+  <body class="{% if page.url == '/' %}home-page {% endif %}theme-dark">
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -56,6 +56,7 @@
         function applyTheme(theme) {
           var isLight = theme === "light";
           body.classList.toggle("theme-light", isLight);
+          body.classList.toggle("theme-dark", !isLight);
 
           if (toggle) {
             toggle.textContent = isLight ? "Dark" : "Light";
