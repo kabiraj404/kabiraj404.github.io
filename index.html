@@ -19,8 +19,21 @@ layout: null
         --panel-border: #d9d6cf;
         --text: #202522;
         --text-soft: #68706b;
+        --text-faint: #8a918b;
         --accent: #356859;
+        --accent-soft: rgba(53, 104, 89, 0.1);
         --max: 860px;
+      }
+
+      body.theme-dark {
+        --panel: #151716;
+        --panel-soft: #1d201e;
+        --panel-border: #363b37;
+        --text: #f1f0e9;
+        --text-soft: #aeb5ad;
+        --text-faint: #7e887f;
+        --accent: #9fc7b4;
+        --accent-soft: rgba(159, 199, 180, 0.12);
       }
 
       * {
@@ -294,7 +307,7 @@ layout: null
       }
 
       .link-item:focus-visible {
-        outline: 5px solid rgba(14, 165, 233, 0.48);
+        outline: 3px solid var(--accent);
         outline-offset: 2px;
       }
 
@@ -346,11 +359,11 @@ layout: null
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid rgba(30, 41, 59, 0.16);
-        color: #475569;
+        border: 1px solid var(--panel-border);
+        color: var(--accent);
         font-size: 12px;
         font-weight: 600;
-        background: rgba(248, 250, 252, 0.95);
+        background: var(--accent-soft);
         flex-shrink: 0;
         transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
       }
@@ -358,8 +371,8 @@ layout: null
       .link-item:hover .link-arrow,
       .link-item:focus-visible .link-arrow {
         transform: translateX(2px);
-        background: rgba(14, 165, 233, 0.14);
-        border-color: rgba(14, 165, 233, 0.45);
+        background: var(--accent-soft);
+        border-color: var(--accent);
       }
 
       .link-item.is-clicked {
@@ -380,11 +393,11 @@ layout: null
         text-transform: uppercase;
         letter-spacing: 0.08em;
         font-size: 11px;
-        color: #475569;
-        background: rgba(255, 255, 255, 0.85);
-        border: 1px solid rgba(30, 41, 59, 0.12);
-        border-radius: 999px;
-        padding: 6px 10px;
+        color: var(--text-faint);
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
       }
 
       .subsection-title.plain {
@@ -517,7 +530,7 @@ layout: null
       }
 
       .social-row a:focus-visible {
-        outline: 5px solid rgba(14, 165, 233, 0.48);
+        outline: 3px solid var(--accent);
         outline-offset: 2px;
       }
 
@@ -525,8 +538,8 @@ layout: null
         width: 20px;
         height: 20px;
         border-radius: 999px;
-        border: 1px solid rgba(30, 41, 59, 0.14);
-        background: rgba(241, 245, 249, 0.9);
+        border: 1px solid var(--panel-border);
+        background: var(--accent-soft);
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -537,8 +550,8 @@ layout: null
       .social-row a:hover .social-icon,
       .social-row a:focus-visible .social-icon {
         transform: scale(1.08);
-        border-color: rgba(14, 165, 233, 0.45);
-        background: rgba(14, 165, 233, 0.14);
+        border-color: var(--accent);
+        background: var(--accent-soft);
       }
 
       .pressable.is-clicked,
@@ -599,81 +612,6 @@ layout: null
           font-size: 11px;
         }
       }
-      body.theme-light {
-        background: #f4f8fc;
-        color: #10213b;
-      }
-
-      body.theme-light .topbar {
-        background: rgba(248, 250, 252, 0.9);
-        border-bottom-color: rgba(15, 23, 42, 0.1);
-      }
-
-      body.theme-light .brand,
-      body.theme-light .quick-nav a,
-      body.theme-light .theme-toggle {
-        color: #435b78;
-      }
-
-      body.theme-light .brand small {
-        color: #667f9c;
-      }
-
-      body.theme-light .quick-nav a:hover,
-      body.theme-light .quick-nav a.active,
-      body.theme-light .theme-toggle:hover {
-        color: #10213b;
-        background: rgba(14, 165, 233, 0.08);
-      }
-
-      body.theme-light section {
-        background: #ffffff;
-        border-color: rgba(30, 41, 59, 0.12);
-      }
-
-      body.theme-light .hero-copy,
-      body.theme-light .section-lead,
-      body.theme-light .fact .hint,
-      body.theme-light .link-item .link-desc {
-        color: #5f728b;
-      }
-
-      body.theme-light .link-item,
-      body.theme-light .free-item,
-      body.theme-light .social-row a {
-        background: rgba(255, 255, 255, 0.95);
-        border-color: rgba(30, 41, 59, 0.12);
-        color: #10213b;
-      }
-
-      body.theme-light .link-item:hover,
-      body.theme-light .free-item:hover,
-      body.theme-light .social-row a:hover {
-        border-color: rgba(14, 165, 233, 0.45);
-        background: #ffffff;
-      }
-
-      body.theme-light .social-icon,
-      body.theme-light .link-arrow,
-      body.theme-light .free-icon {
-        background: rgba(241, 245, 249, 0.9);
-        color: #475569;
-      }
-
-      body.theme-light .subsection-title {
-        color: #475569;
-        background: rgba(255, 255, 255, 0.85);
-      }
-
-      body.theme-light .subsection-title.plain {
-        background: transparent;
-      }
-
-      body.theme-light .hero-kicker,
-      body.theme-light .fact .label {
-        color: #0ea5e9;
-      }
-
     </style>
   </head>
 
@@ -696,8 +634,7 @@ layout: null
       <section class="hero" id="home">
         <div>
           <p class="hero-kicker">Namaste</p>
-          <h1>{{ site.name }}</h1>
-
+          <!-- <h1>{{ site.name }}</h1> -->
           <p class="hero-copy">
            Thanks for stopping by!<br>
            I am a PhD student combining wetland micrometeorological data and modeling approaches to gain deeper insights into environmental dynamics. <br>
@@ -799,6 +736,7 @@ layout: null
         function applyTheme(theme) {
           var isLight = theme === "light";
           document.body.classList.toggle("theme-light", isLight);
+          document.body.classList.toggle("theme-dark", !isLight);
 
           if (homeToggle) {
             homeToggle.textContent = isLight ? "Dark" : "Light";
@@ -808,9 +746,9 @@ layout: null
 
         var savedTheme = "dark";
         try {
-          savedTheme = localStorage.getItem(storageKey) || "dark";
+          savedTheme = localStorage.getItem(storageKey) || "light";
         } catch (e) {
-          savedTheme = "dark";
+          savedTheme = "light";
         }
         applyTheme(savedTheme);
 
