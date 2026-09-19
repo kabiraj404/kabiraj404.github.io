@@ -237,6 +237,12 @@ nav {
   padding: 0;
 }
 
+.listing-shell,
+.post-shell {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 .page-title,
 .post-title,
 .list-header h1 {
@@ -245,6 +251,15 @@ nav {
   font-family: var(--font-serif);
   font-weight: 400;
   line-height: 1.15;
+}
+
+.post-title {
+  font-size: clamp(32px, 6vw, 48px);
+  letter-spacing: -0.02em;
+}
+
+.content-header {
+  margin-bottom: 42px;
 }
 
 .list-header {
@@ -272,6 +287,20 @@ nav {
   }
 }
 
+@include mobile {
+  .list-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .listing-shell,
+  .post-shell {
+    max-width: none;
+  }
+}
+
 .page-subtitle {
   margin: 0 0 24px;
   color: var(--text-muted);
@@ -285,10 +314,64 @@ nav {
   color: var(--text-muted);
 }
 
+.post-date {
+  margin-top: 12px;
+}
+
 .post-content {
   color: var(--text-secondary);
   font-size: 17px;
   line-height: 1.7;
+
+  p {
+    margin: 0 0 1.35em;
+  }
+
+  ul, ol {
+    margin: 0 0 1.35em;
+    padding-left: 1.4em;
+    list-style: revert;
+  }
+
+  li {
+    margin-bottom: 0.45em;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  img {
+    margin: 2em 0;
+    border-radius: 0;
+  }
+
+  pre, code {
+    font-family: "SFMono-Regular", Consolas, monospace;
+  }
+
+  code {
+    padding: 0.15em 0.3em;
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    font-size: 0.88em;
+  }
+
+  pre {
+    overflow-x: auto;
+    margin: 1.8em 0;
+    padding: 18px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    line-height: 1.5;
+  }
+
+  pre code {
+    padding: 0;
+    background: transparent;
+  }
 
   h2, h3 {
     color: var(--text-primary);
@@ -298,7 +381,7 @@ nav {
   blockquote {
     margin: 1.8em 0;
     padding-left: 16px;
-    border-left: 2px solid var(--text-primary);
+    border-left: 2px solid var(--accent);
     color: var(--text-primary);
     font-family: var(--font-serif);
     font-size: 19px;
@@ -323,6 +406,7 @@ nav {
 
   &:last-child {
     border-bottom: none;
+    margin-bottom: 0;
   }
 
   h2 {
