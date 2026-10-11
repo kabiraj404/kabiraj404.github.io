@@ -162,7 +162,7 @@ layout: null
       }
 
       .hero-copy {
-        color: var(--text-soft);
+        color: var(--text);
         max-width: 60ch;
         margin: 0;
         font-size: 18px;
@@ -612,6 +612,46 @@ layout: null
           font-size: 11px;
         }
       }
+
+
+
+      .connect-container {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; /* Three columns: left avatar, links, right avatar */
+        align-items: center; /* Vertically aligns image with the text content */
+        gap: 2.5rem;       /* Spacing between image and links */
+      }
+
+      .connect-links { /* Make the links wrapper use a flexible grid so rows/items wrap dynamically */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        align-items: center;
+      }
+
+      /* Container restricts the max height to match the text section */
+      .connect-avatar {
+        flex-shrink: 0;     /* Prevents image from squishing */
+        width: 250px;        /* Small fixed width */
+        height: 250px;       /* Small fixed height */
+      }
+
+      /* Image fills container completely while maintaining aspect ratio */
+      .connect-avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Circle shape (remove or change to 8px for rounded square) */
+        object-fit: cover;  /* Prevents image distortion */
+        display: block;
+      }
+      /* Responsive fallback for smaller mobile screens */
+      @media (max-width: 768px) {
+        .connect-container {
+          grid-template-columns: 1fr; /* Stack everything vertically on mobile */
+          text-align: center;
+          justify-items: center;
+        }
+      }
     </style>
   </head>
 
@@ -637,8 +677,10 @@ layout: null
           <!-- <h1>{{ site.name }}</h1> -->
           <p class="hero-copy">
            Thanks for stopping by!<br>
-           I am a PhD student combining wetland micrometeorological data and modeling approaches to gain deeper insights into environmental dynamics. <br>
-           I also have prior experience studying hydro-meteorological processes in Himalayan river basins. <br>
+           I am a PhD candidate focusing on understanding biogeochemical processes in forested wetlands. <br>
+           By comibing the wetland micrometeorological data (such as eddy covariance) with process based modeling approaches, 
+           I aim to gain deeper insights of methane and carbon flux dynamics in wetland ecosystems. <br>
+           Previously, my reseach focused on hydro-meteorological processes and river dynamics in Himalayan river basins. <br>
           </p>
         </div>
              <div class="facts">
@@ -705,7 +747,7 @@ layout: null
         </div>
       </section>
 
-      <section id="connect">
+      <!-- <section id="connect">
         <h4 class="subsection-title plain">Let's connect at</h4>
         <div class="social-row">
           <a href="https://www.linkedin.com/in/kabiraj404" aria-label="Open LinkedIn profile">
@@ -717,14 +759,44 @@ layout: null
         <div class="social-row">
           <a href="{{ site.baseurl }}/feedback/" aria-label="Open feedback page">
             <span class="social-icon" aria-hidden="true">in</span>
-            <span>Fork</span>
+            <span>Feedback</span>
           </a>
         </div>
+      </section> -->
+      <section id="connect" class="connect-container">
+        <!-- Left: Avatar / Photo -->
+        <div class="connect-avatar">
+          <img src="https://kabiraj404.github.io/images/dp.jpg" alt="Kabiraj Khatiwada" />
+        </div>
+
+        <div class="connect-links">
+          <h4 class="subsection-title plain">Let's connect at</h4>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/kabiraj404" aria-label="Open LinkedIn profile">
+              <span class="social-icon" aria-hidden="true">in</span>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          
+          <h4 class="subsection-title plain">Admiration or aversion at</h4>
+          <div class="social-row">
+            <a href="{{ site.baseurl }}/feedback/" aria-label="Open feedback page">
+              <span class="social-icon" aria-hidden="true">💬</span>
+              <span>Feedback</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="connect-avatar">
+          <img src="https://kabiraj404.github.io/images/classic_dp.jpg" alt="Kabiraj Khatiwada" />
+        </div>
+      </section>
+
         <div class="fact fact-highlight">
             <span class="value"><strong id="weekend-days">--</strong> days until the weekend </span>
             <span class="hint">Enjoy now <span id="live-time">Loading time...</span>, (CT).</span>
         </div>
-      </section>
+      <!-- </section> -->
         <p style="font-size: 0.6em; font-style: italic;">Last updated: July 2026</p>
     </main>
 
