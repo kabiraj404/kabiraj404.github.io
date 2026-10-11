@@ -1,6 +1,6 @@
 ---
-title: 'Useless links 2026-09'
-date: 2026-09-01
+title: 'Useless links 2026-10'
+date: 2026-10-01
 #permalink: /posts
 categories: Collection
 laout: post
@@ -9,26 +9,15 @@ laout: post
 
 Here is a list of websites I found interesting this month.
 
-**It's an Internet Thing** (Accessed Sep 09, 2026)
-* [The digital graveyard](https://rip.so/)
 
-**Collections** (Accessed Sep 09, 2026)
-* [Damn Interesting](https://www.damninteresting.com/curated-links/)
-* [Bear Discovery Feed](https://bearblog.dev/discover/)
+**Book collections** (Accessed Sep 10, 2026)
 * [Classic Archive](https://classics.mit.edu/index.html)
 * [Wisdom Library](https://www.wisdomlib.org/hinduism/book/shiva-purana-english)
 
-**Daily Games** (Accessed Sep 09, 2026)
-* [Dungeon](https://dailydungeon.net/)
-* [Suffalo](https://www.newyorker.com/crossword-puzzles-and-games)
-* [Connections](https://www.nytimes.com/games/connections)
-* [Travle](https://travle.earth/)
-* [Travle USA](https://travle.earth/usa)
-* [Map](https://maptap.gg/)
-* [Akari](https://dailyakari.com/)
-* [Fields](https://inkwellgames.com/games/fields/)
-* [Coding Challenge](https://www.freecodecamp.org/learn/daily-coding-challenge/archive)
-* [Food Guessr](https://www.foodguessr.com/game/daily)
+**RSS** (Accessed Sep 10, 2026)
+* [State of art on RSS](https://github.com/AboutRSS/ALL-about-RSS?tab=readme-ov-file#apps)
+* [Email newsletter to RSS](https://kill-the-newsletter.com/)
+* [RSS from webpage](https://rss-bridge.org/bridge01/)
 
 
 <br>

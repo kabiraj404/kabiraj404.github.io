@@ -9,8 +9,15 @@ laout: post
 
 Here is a list of websites I found interesting this month.
 
-**It's an Internet Thing** (Accessed Sep 09, 2026)
+**Nitizen** (Accessed Sep 09, 2026)
 * [The digital graveyard](https://rip.so/)
+* [Worn on TV](https://wornontv.net/)
+* [Movie Transcripts](https://scrapsfromtheloft.com/movie-transcripts/)
+* [Netflix Movie Codes](https://www.netflix-codes.com/)
+* [Podcast search engine](https://www.listennotes.com/)
+* [Live TV](https://tv.garden/)
+* [Random street view](https://randomstreetview.com/)
+* [Bored Button](https://www.boredbutton.com/)
 
 **Collections** (Accessed Sep 09, 2026)
 * [Damn Interesting](https://www.damninteresting.com/curated-links/)

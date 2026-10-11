@@ -1,6 +1,6 @@
 ---
-title: 'Useless links 2026-10'
-date: 2026-10-01
+title: 'Useful papers on ...'
+date: 2026-10-02
 #permalink: /posts
 categories: Collection
 laout: post
