@@ -1,5 +1,5 @@
 ---
-title: 'Interesting websites_2026-09'
+title: 'Useless links 2026-09'
 date: 2026-09-01
 #permalink: /posts
 categories: Collection
@@ -9,14 +9,12 @@ laout: post
 
 Here is a list of websites I found interesting this month.
 
-**It's an Internet Thing**
+**It's an Internet Thing** (Accessed Sep 09, 2026)
 * [The digital graveyard](https://rip.so/)
 
 **Collections** (Accessed Sep 09, 2026)
 * [Damn Interesting](https://www.damninteresting.com/curated-links/)
 * [Bear Discovery Feed](https://bearblog.dev/discover/)
-* [Classic Archive](https://classics.mit.edu/index.html)
-* [Wisdom Library](https://www.wisdomlib.org/hinduism/book/shiva-purana-english)
 
 **Daily Games** (Accessed Sep 09, 2026)
 * [Dungeon](https://dailydungeon.net/)
